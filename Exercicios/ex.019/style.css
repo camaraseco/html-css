@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: rgb(115, 211, 118);
+}
+
+
+h1 {
+    color: rgb(4, 109, 0);
+    text-indent: 25px;
+}
+
+
+h2 {
+   color: rgb(5, 5, 5);
+
+}
+
+p {
+    color: black;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 10px;
+}
+
+h1#principal {
+    /* Tudo que está em html como (id) em css é representado com (#),    (Só pode ter um elemento por documento, mas não por págena) 
+       Tudo que está em html como (class) em css é representado com (.), (pode ter vários elementos) 
+    */
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    background-color: rgb(16, 112, 16);
+    box-shadow: 10px 10px 10px rgb(37, 199, 61);
+    border-radius: 10px;
+}
+
+.basico {
+    color: rgb(59, 253, 33);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+.intermediario {
+    color: rgb(255, 248, 57);
+    text-decoration: underline;
+}
+
+.avancado {
+    color: rgb(255, 64, 64);
+    text-decoration: underline;
+}
+
+.destaque {
+    background-color: rgba(191, 198, 58, 0.758);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

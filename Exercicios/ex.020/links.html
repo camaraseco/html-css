@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: rgb(191, 255, 0);
+        }
+
+        a::before{
+            content: "==>";
+        }
+
+        a::after {
+            content: "[link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+
+        /*  Seletores Personalizados
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children (filho)
+        */
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/se99ca/secocamara" target="_blank" rel="external">Repositório github</a></li>
+        <li><a href="https://www.youtube.com/@HipHopHub-et9iy" target="_blank" rel="external">Canal youtube</a></li>
+        <li><a href="https://www.youtube.com/channel/UCxR-j-JSI6P3GQfST3xMmoQ" target="_blank" rel="external">Outro canal youtube</a></li>
+    </ul>
+
+</body>
+</html>
