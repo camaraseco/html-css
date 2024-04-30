@@ -12,24 +12,21 @@
 
 
 header {
-    width: 99vh;
+    
     background-color: black;
     color: white;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
     font-family: "Passion One";
-    margin: auto;
-    padding: 10px;
-    max-width: 1000px;
-    min-width: 400px;
+    margin: 20px;
+    padding: 40px;
 
 }
 
 h1 {
-    margin: 0px;
-    max-width: 99%;
-    min-width: none;
+    margin: auto;
+   
 }
 
 header > p {
@@ -48,18 +45,29 @@ main {
     font-size: 26px;
     font-family: "Sriracha";
     line-height: 50px;
-    margin: 5px;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    
+}
+
+main > p {
+    padding-left: 30px;
 }
 
 article {
-    background-color: rgba(0, 0, 0, 0.455);
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    background-color: rgba(0, 0, 0, 0.315);
     color: white;
     font-family: "Sriracha";
     font-size: 26px;
-    padding: 15px;
+    padding: 7px;
     margin: 0px;
-    max-width: 350px;
-    min-width: none;
+    height: 360px;
+    width: 310px;
+    
 }
 
 #flor {
@@ -71,6 +79,7 @@ article {
     background-attachment: fixed;
     max-width: 99%;
     min-width: none;
+    height: 500px;
 }
 
 #livro {
@@ -80,6 +89,7 @@ article {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 500px;
 }
 
 footer {
