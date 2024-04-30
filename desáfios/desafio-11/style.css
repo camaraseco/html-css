@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+
+
+
+header {
+    width: 99vh;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Passion One";
+    margin: auto;
+    padding: 10px;
+    max-width: 1000px;
+    min-width: 400px;
+
+}
+
+h1 {
+    margin: 0px;
+    max-width: 99%;
+    min-width: none;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-size: 26px;
+    font-family: "Sriracha";
+    line-height: 50px;
+    margin: 5px;
+}
+
+article {
+    background-color: rgba(0, 0, 0, 0.455);
+    color: white;
+    font-family: "Sriracha";
+    font-size: 26px;
+    padding: 15px;
+    margin: 0px;
+    max-width: 350px;
+    min-width: none;
+}
+
+#flor {
+    position: relative;
+    background-image: url("	https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 99%;
+    min-width: none;
+}
+
+#livro {
+    position: relative;
+    background-image: url("https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
