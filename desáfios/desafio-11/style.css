@@ -7,107 +7,122 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+    :root {
+        --font01: Verdana, Geneva, Tahoma, sans-serif;
+        --font02: "Passion One", sans-serif;
+        --font03: "Sriracha", sans-serif; 
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html, body {
+        min-height: 100vh;
+        font-family: var(--font01);
+    }
 
 
-
-
-header {
-    
+    header {
     background-color: black;
     color: white;
-    font-size: 32px;
+    text-align: center;
+    font-size: 5vw;
+    }
+
+    h1 {
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-family: var(--font02);
     font-weight: bold;
-    text-align: center;
-    font-family: "Passion One";
-    margin: 20px;
-    padding: 40px;
+    }
 
-}
+    header > p {
+    padding-bottom: 50px;
+    font-size: 20px;
+    }
 
-h1 {
-    margin: auto;
-   
-}
-
-header > p {
-    color: white;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    margin: auto;
-    padding: 10px;
-}
-
-main {
+    main {
     background-color: white;
     color: black;
-    text-align: left;
-    font-size: 26px;
-    font-family: "Sriracha";
-    line-height: 50px;
-    max-width: 1200px;
-    min-width: 320px;
-    margin: auto;
+    }
+
+    main > p {
+        padding-left: 30px;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        font-size: 3.5vw;
+        line-height: 2em;
+        font-family: var(--font03);
+    }
+
+
+    #par {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.315);
+        color: white;
+        display: inline-block;
+        padding: 5px;
+        font-size: 3.5vw;
+        line-height: 2em;
+        font-family: var(--font03);
+        
+    }
+
+    #impar {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.315);
+        color: white;
+        display: inline-block;
+        padding: 5px;
+        font-size: 3.5vw;
+        line-height: 2em;
+        font-family: var(--font03);
+    }
+
     
-}
 
-main > p {
-    padding-left: 30px;
-}
+    #flor {
+        position: relative;
+        background-image: url("	https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        
+    }
 
-article {
-    position: absolute;
-    left: 5%;
-    top: 10%;
-    background-color: rgba(0, 0, 0, 0.315);
-    color: white;
-    font-family: "Sriracha";
-    font-size: 26px;
-    padding: 7px;
-    margin: 0px;
-    height: 360px;
-    width: 310px;
-    
-}
+    #livro {
+        position: relative;
+        background-image: url("https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
 
-#flor {
-    position: relative;
-    background-image: url("	https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    max-width: 99%;
-    min-width: none;
-    height: 500px;
-}
-
-#livro {
-    position: relative;
-    background-image: url("https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-footer {
+    footer {
     background-color: black;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     text-align: center;
-    margin: 0px;
-    padding: 10px;
-}
+    padding: 7px;
+    }
 
-a {
+    a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-}
+    font-weight: lighter;
+    font-family: var(--font02);
+    }
 
-a:hover {
+    a:hover {
     text-decoration: underline;
-}
+    }
