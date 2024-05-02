@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    height: ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "love";
+    src: url("fonts/love\ larry\ ttf.ttf") format("opentype"), url("fonts/love\ larry\ ttf.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    /*
+    Tipos de format ()
+    opentype (otf)
+    truetype (ttf)
+    embedded-opentype
+    truetype-aat (Apple Advanced Typography)
+    svg
+    */
+}
+
+BODY {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #0FC2C0, #0CABA8, #008F8C, #015958, #023535);
+    height: 100%;
+    
+    margin-bottom: 450px;
+    
+}
+
+H1 {
+    font-family: 'love', Times, serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+p {
+    font-family: "Kaushan Script", Helvetica, sans-serif;
+    text-align: justify;
+}

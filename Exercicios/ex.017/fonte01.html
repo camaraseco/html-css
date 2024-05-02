@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            background-image: linear-gradient(to top, #1F29D1, #215DDB, #2883C5, #21BFDB, #1FD1BC)
+          /*
+          Medidas absolutas
+          cm, mm, i, px, pt, pc
+          
+          Medidas relativas
+          em, ex, rem, vw, vh, %
+          16px geralmente é = 1em
+          */
+        }
+    </style>
+</head>
+<body>
+    <H1>Trabalhando com fontes</H1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod porro quidem asperiores repellat numquam cumque tempore error esse dolorum est adipisci harum quibusdam rem expedita, velit debitis in facilis corporis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem incidunt porro consequuntur hic deserunt, amet eaque fuga maxime nihil alias aliquid optio possimus, natus, nam est sunt. Impedit, dolor.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur excepturi nulla molestiae autem sequi dolorem accusamus similique, optio magnam! Sunt tempore velit incidunt officiis unde nam, minus dolorum ducimus quis!</p>
+    <main>
+        <h2 id="caixa">Teste de caixa</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati porro illum necessitatibus omnis accusamus, hic ullam, veritatis error dignissimos, quos sunt fugiat aspernatur qui. Expedita reiciendis officiis similique ipsam nobis.</p>
+        <h5><a href="fonte02.html">Next</a></h5>
+    </main>
+    <main id="imagem">
+        <img src="imagens/foto-p.png" alt="foto de perfil">
+        <picture>
+            <source media="(max-width: 475px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 775px)" srcset="imagens/foto-m.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        </picture>
+    </main>
+</body>
+</html>
