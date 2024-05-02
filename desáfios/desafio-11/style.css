@@ -69,6 +69,7 @@
         font-size: 3.5vw;
         line-height: 2em;
         font-family: var(--font03);
+        text-shadow: 1px 1px 2px black;
         
     }
 
@@ -83,6 +84,7 @@
         font-size: 3.5vw;
         line-height: 2em;
         font-family: var(--font03);
+        text-shadow: 1px 1px 2px black;
     }
 
     
@@ -90,22 +92,22 @@
     #flor {
         position: relative;
         background-image: url("	https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg");
-        background-position: center center;
+        background-position: right center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        
+        box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.629);
         
     }
 
     #livro {
         position: relative;
         background-image: url("https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg");
-        background-position: center center;
+        background-position: right center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        
+        box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.626);
     }
 
     footer {
