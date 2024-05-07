@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+
+        table {
+            background-color: white;
+            border: 1px solid black;
+            width: 700px;
+            border-collapse: collapse;
+            padding: 10px;
+
+        }
+
+        caption {
+            background-color: rgb(177, 177, 255);
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        thead > tr {
+            
+            background-color: rgb(177, 177, 255);
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        
+
+        th {
+            background-color: rgb(177, 177, 255);
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+
+        }  
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+
+
+        td.num {
+            text-align: right;
+        }
+
+        td.numero {
+            background-color: rgb(212, 212, 241);
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 60px;
+            height: 15px;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TD
+            TBODY
+                 TR, TD, TH
+            TFOOT
+                TR, TD, TH        
+    -->
+    <table>
+        <caption>Cidades mais populosas da Guiné-Bissau</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Localidade</th>
+                <th scope="col">Região</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td class="numero">1</td>
+                <td>Bissau</td>
+                <td>Sector autónomo de Bissau</td>
+                <td class="num">388 028</td>
+            </tr>
+            <tr>
+                <td class="numero">2</td>
+                <td>Bafatá</td>
+                <td>Bafatá</td>
+                <td class="num">22 521</td>
+            </tr>
+            <tr>
+                <td class="numero">3</td>
+                <td>Gabu</td>
+                <td>Gabu</td>
+                <td class="num">14 430</td> 
+            </tr>
+            <tr>
+                <td class="numero">4</td>
+                <td>Bissorã</td>
+                <td>Oio</td>
+                <td class="num">12 688</td>
+            </tr>
+            <tr>
+                <td class="numero">5</td>
+                <td>Bolama</td>
+                <td>Bolama</td>
+                <td class="num">10 769</td>
+            </tr>
+            <tr>
+                <td class="numero">6</td>
+                <td>Cacheu</td>
+                <td>Cacheu</td>
+                <td class="num">10 490</td>
+            </tr>
+            <tr>
+                <td class="numero">7</td>
+                <td>Bubaque</td>
+                <td>Bolama</td>
+                <td class="num">9 914</td>
+            </tr>
+            <tr>
+                <td class="numero">8</td>
+                <td>Catió</td>
+                <td>Tombali</td>
+                <td class="num">9 898</td>
+            </tr>
+            <tr>
+                <td class="numero">9</td>
+                <td>Mansôa</td>
+                <td>Oio</td>
+                <td class="num">7 821</td>
+            </tr>
+            <tr>
+                <td class="numero">10</td>
+                <td>Buba</td>
+                <td>Quinara</td>
+                <td class="num">7 779</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de abitantes</th>
+                <td class="num"><strong>494 338</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
