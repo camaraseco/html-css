@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+
+        table {
+            background-color: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 1.3em;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+
+        td.es {
+            width: 250px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        th.li {
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col" class="li">Grupo</th>
+                <th class="es" scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup" class="li">Mulheres</th>
+                <td class="es">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+            
+                <td class="es">Biatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+            
+                <td class="es">Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup" class="li">Homens</th>
+                <td class="es">Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+            
+                <td class="es">Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+            
+                <td class="es">Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
