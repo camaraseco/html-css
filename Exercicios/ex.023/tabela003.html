@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabelas, mesclagem de células</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td rowspan="2">A</td>
+            
+            <td>C</td>
+            <td colspan="3">D</td>
+        </tr>
+        <tr>
+            <td rowspan="1">E</td>
+            <td>F</td>
+            <td rowspan="1">G</td>
+            <td rowspan="2">H</td>
+        </tr>
+        <tr>
+            
+            <td rowspan="2">J</td>
+            <td>K</td>
+            <td colspan="2">L</td>
+        </tr>
+        <tr>
+            <td colspan="1">M</td>
+            <td>N</td>
+            <td>O</td>
+            <td colspan="1">P</td>
+        </tr>
+    </table>
+</body>
+</html>
