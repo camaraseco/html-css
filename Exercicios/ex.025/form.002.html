@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste dde formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+       <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required placeholder="Nome Completo">
+       </p>
+       <p>
+        <label for="ise">Senha:</label>
+        <input type="password" name="se" id="ise" required size="8" minlength="8" maxlength="16">
+       </p> 
+       <p>
+        <label for="imel">Email:</label>
+        <input type="text" name="mel" id="imel" required autocomplete="email">
+       </p>
+       <p>
+        <label for="ite">tel:</label>
+        <input type="text" name="te" id="ite" required minlength="9" maxlength="12">
+       </p>
+       <input type="submit" value="Enviar">
+       <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
