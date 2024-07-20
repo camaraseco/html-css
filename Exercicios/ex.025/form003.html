@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>formulário</title>
+</head>
+<body>
+    <H1>formulário</H1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inom">Nome:</label>
+            <input type="text" name="Nome" id="inom" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="ime">Média</label>
+            <input type="number" name="me" id="ime" required min="0" max="20" value="12" step="0.1" >
+        </p>
+        <p>
+            <label for="imes">Período Letivo:</label>
+            <input type="month" name="mes" id="imes" required value="2010-05">
+        </p>
+        <p>
+            <label for="idi">Dia da Prova</label>
+            <input type="datetime-local" name="dia" id="idi" value="2012-12-12 05:30">
+        </p>
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar"> 
+        </p>
+
+    </form>
+</body>
+</html>
