@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Checkbox e Radio button</title>
+</head>
+<body>
+    <h1>Checkbox e Radio button</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend style="font-size: large; font-weight: bold; ">Sexo</legend>
+            <p>
+                <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="imas">
+            </p>
+            <p>
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="sexo" id="ifem">
+            </p>
+            <p>
+                <label for="iou">Outro</label>
+                <input type="radio" name="sexo" id="iou">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend style="font-size: large; font-weight: bold;">Desportos favoritos</legend>
+            <p>
+                <label for="ifut">Futebol</label>
+                <input type="checkbox" name="fut" id="ifut" checked>
+            </p>
+            <p>
+                <label for="ibas">Basquetbol</label>
+                <input type="checkbox" name="bas" id="ibas">
+            </p>
+            <p>
+                <label for="isal">Futsal</label>
+                <input type="checkbox" name="futsal" id="isal">
+            </p>
+            <p>
+                <label for="irug">Rugby</label>
+                <input type="checkbox" name="rug" id="irug">
+            </p>
+            <p>
+                <label for="ite">Ténis</label>
+                <input type="checkbox" name="te" id="ite">
+            </p>
+            <p>
+                <label for="ihan">Handebol</label>
+                <input type="checkbox" name="han" id="ihan">
+            </p>
+            <p>
+                <label for="ivo">Voleibol</label>
+                <input type="checkbox" name="vo" id="ivo">
+            </p>
+            <p>
+                <label for="ibo">boxe</label>
+                <input type="checkbox" name="bo" id="ibo">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
