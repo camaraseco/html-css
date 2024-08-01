@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Color Range File</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icor">Escolhe uma cor</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="isat">Qual é o seu nível de satifação?</label>
+            <input type="range" name="sat" id="isat" min="0" max="10" value="5">
+        </p>
+        <p>
+            <label for="iarq">Carrega um arquivo</label>
+            <input type="file" name="arq" id="iarq">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
