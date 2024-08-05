@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Exemplos de formulários</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="iba">Bairro:</label>
+            <select name="bairro" id="iba" >
+                <optgroup label="Zona Norte">
+                    <option selected>--ESCOLHE O SEU BAIRRO--</option>
+                    <option value="PL">Pluba</option>
+                    <option value="AN">Antula</option>
+                    <option value="EM">Empantchá</option>
+                </optgroup>
+                <optgroup label="Zona Leste">
+                    <option value="PR">Praça</option>
+                    <option value="BB">Bissau Bedju</option>
+                    <option value="TP">Tchom de pepel</option>
+                    <option value="AB">Alto Bandim</option>
+                    <option value="Z7">Zona 7</option>
+                </optgroup>
+                <optgroup label="Zona Sul">
+                    <option value="QL">Quelele</option>
+                    <option value="MD">Madina</option>
+                    <option value="BO">Borr</option>
+                    <option value="ET">Enterramento</option>
+                    <option value="PK">Plack</option>
+                    <option value="QM">Quinhamel</option>
+                </optgroup>
+                <optgroup label="Zona Oeste">
+                    <option value="BI">Bairro Internacional</option>
+                    <option value="BK">Bissakel</option>
+                    <option value="DJ">Djolo</option>
+                    <option value="DA">Djal</option>
+                    <option value="HF">háfia</option>
+                    <option value="GS">Gabu Sinho</option>
+                </optgroup>
+                <optgroup label="Zona Centro">
+                    <option value="SP">São Paulo</option>
+                    <option value="BM">Bairro Millitar</option>
+                    <option value="BS">Bissak</option>
+                    <option value="BR">Bra Penha</option>
+                    <option value="BJ">Bairro Ajuda</option>
+                    <option value="CU">Cuntum</option>
+                    <option value="MS">Mistra</option>
+                    <option value="BL">Belem</option>
+                    <option value="QG">QG</option>
+                    <option value="BD">Bandim</option>
+                    <option value="CT">Cintra</option>
+                    <option value="PI">Pílum</option>
+                    <option value="MD">Mindará</option>
+                    <option value="RN">Reino</option>
+                    <option value="SL">Santa Luzia</option>
+                </optgroup>
+            </select>
+        </div><br>
+        <div>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="profi" id="iprof" placeholder="--ESCOLHE A SUA PROFISSÃO" size="30" list="pro">
+                <datalist id="pro">
+                    <option>Administrador</option>
+                    <option>Arquiteto</option>
+                    <option>Barrista</option>
+                    <option>Contabilista</option>
+                    <option>Desenvolvidor</option>
+                    <option>Engenheiro</option>
+                    <option>Empreiteiro</option>
+                    <option>Gerrenciador</option>
+                    <option>Jornalista</option>
+                    <option>Pedreiro</option>
+                    <option>Padeiro</option>
+                    <option>Mecánico</option>
+                </datalist>
+        </div><br>
+        <div>
+            <label for="ivo">Fala Sobre Você</label><br>
+            <textarea name="voce" id="ivo" cols="50" rows="5" placeholder="Eu sou Braima Baldé...."></textarea>
+        </div>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
