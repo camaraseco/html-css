@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Elemento output em formulário</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="in1">Primeiro Número:</label>
+            <input type="number" name="n1" id="in1" required min="0" max="100" size="5" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div><br>
+        <div>
+            <label for="in2">Segundo Número:</label>
+            <input type="number" name="n2" id="in2" min="0" max="100" size="5" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div><br>
+        <div>
+            <label for="isoma">Soma =</label>
+            <output name="soma" id="isoma">0</output>
+        </div><br>
+        <div>
+            <label for="ida">Em que ano você nasceu?</label>
+            <input type="number" name="idade" id="ida" required min="1900" max="2024" oninput="calcIdade()">
+        </div><br>
+            <DIV>
+                <label for="res">A sua idade é:</label>
+                <output id="res">24</output>
+            </DIV>
+        <div>
+            <label for="inum">Nivel de satisfação</label>
+            <input type="range" name="num" id="inum" min="0" 
+            max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </div><br>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </div>
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullyear()
+                res.innerHTML = Number(atual) - Number(ida.value)
+            }
+        </script>
+    </form>
+    
+</body>
+</html>
