@@ -23,7 +23,7 @@
         </div><br>
         <div>
             <label for="ida">Em que ano você nasceu?</label>
-            <input type="number" name="idade" id="ida" required min="1900" max="2024" oninput="calcIdade()">
+            <input type="number" name="idade" id="ida" required min="1900" max="2024" oninput="calcidade()">
         </div><br>
             <DIV>
                 <label for="res">A sua idade é:</label>
@@ -40,7 +40,7 @@
             <input type="reset" value="Apagar">
         </div>
         <script>
-            function calcIdade() {
+            function calcidade() {
                 let atual = new Date().getFullyear()
                 res.innerHTML = Number(atual) - Number(ida.value)
             }

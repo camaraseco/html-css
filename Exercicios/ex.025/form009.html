@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" oninput="tot.innerHTML = Number(pre.value) * Number(qua.value)">
+        <div>
+            <label for="pro">Peoduto:</label>
+            <input type="text" name="produto" id="pro">
+        </div><br>
+        <div>
+            <label for="pre">Preço: $</label>
+            <input type="number" name="preco" id="pre">
+        </div><br>
+        <div>
+            <label for="qua">Quantidade:</label>
+            <input type="number" name="Quantidade" id="qua">
+        </div><br>
+        <div>
+            <label for="tot">Total: $</label>
+            <output id="tot">0</output>
+        </div><br>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
