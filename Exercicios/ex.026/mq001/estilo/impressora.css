@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* Estilos para impressora */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+aside::after {
+    content: "Esse artico foi impresso atrvés do site www.secocamara.com";
+}
