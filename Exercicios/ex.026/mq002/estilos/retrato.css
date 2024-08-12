@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*-- Estilo Retrato --*/
+
+html, body {
+    background-image: url("../imagens/cev-portrait.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1::after {
+    content: "Está no modo retrato";
+}

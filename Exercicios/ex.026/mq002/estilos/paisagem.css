@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*-- Estilos Paisagem --*/
+
+html, body {
+    background-image: url("../imagens/cev-landscape.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1::after {
+    content: "Está no modo paisagem";
+}
+
