@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* Declarações gerais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+        /* Declarações retrato */
+@media screen and (orientation: portrait) {
+    
+
+html, body {
+    background-image: url("../imagens/cev-portrait.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1::after {
+    content: "Está no modo retrato";
+}
+}
+
+        /* Declarações paisagem */
+@media screen and (orientation: landscape) {
+    
+
+html, body {
+    background-image: url("../imagens/cev-landscape.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1::after {
+    content: "Está no modo paisagem";
+}
+}
