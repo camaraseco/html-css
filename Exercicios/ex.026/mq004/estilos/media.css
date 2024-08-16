@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* Media Queries */
+
+/* Breakpoints */
+/*
+Para dispositivos móveis – 320px — 480px
+iPads e tablets – 481px — 768px
+Laptops e telas pequenas – 769px — 1024px
+Telas grandes e desktops – 1025px — 1200px
+TV e telas extragrandes – 1201px e mais
+*/
+
+/* Tablet */
+
+@media only screen and (min-width: 530px) and (max-width: 768px) {
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+        background: center, no-repeat, cover, fixed;
+    }
+    #phone {
+        display: none;
+    }
+    
+    #tablet {
+        display: block;
+    }
+    main {
+        width: 75vw;
+    }
+}
+/* Leptops */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+        background: center, no-repeat, cover, fixed;
+    }
+    #phone {
+        display: none;
+    }
+    #pc {
+        display: block
+    }
+    main::after {
+        content: "Esta é para leptops e telas pequenas";
+        text-align: center;
+        text-decoration: overline;
+    }
+    main {
+        width: 80vw;
+    }
+}
+
+/* Desktops */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+        background: center, no-repeat, cover, fixed;
+       }
+
+    #phone {
+        display: none;
+    }
+    #pc {
+        display: block
+    }
+    main::after {
+        content: "Esta é para desktops e telas grandes";
+        text-align: center;
+        text-decoration: overline;
+    }
+    main {
+        width: 85vw;
+    }
+}
+
+/* TVs e telas extra grandes */
+
+@media screen and (min-width: 1201px) {
+    body {
+        background-image: url("../imagens/back-tv.jpg");
+        background: center, no-repeat, cover, fixed;
+    }
+    #phone {
+        display: none;
+    }
+    #tv {
+        display: block
+    }
+    main::after {
+        content: "Esta é para TVs e telas extra grandes";
+        text-align: center;
+        text-decoration: overline;
+    }
+    main {
+        width: 90vw;
+    }
+}
+
+/* Impressão */
+
+@media print { /* Background não é necessário na impressora */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main::after {
+        content: "Pensa no meio ambiente antes de imprimir este documento!";
+        text-align: center;
+        text-decoration: overline;
+    }
+    #phone {
+        display: none;
+    }
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+}
