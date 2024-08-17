@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* Configuração geral (Móbil first) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(207, 203, 194);
+}
+
+header {
+    padding: 15px;
+    background-color: rgb(141, 140, 140);
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+menu {
+    background-color: rgb(71, 71, 71);
+    color: black;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+}
+
+menu > hr {
+    width: 15px;
+    margin: auto;
+    display: block;
+}
+
+menu > a {
+    background-color: rgb(207, 203, 194);
+    color: black;
+    display: none; 
+    margin-top: 3px;  
+    padding: 3px; 
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+}
+
+menu:hover a {
+    display: block;
+}
+
+main {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80vw;
+    padding: 10px;
+    border-radius: 8px;
+    margin: auto;
+    display: block;
+}
