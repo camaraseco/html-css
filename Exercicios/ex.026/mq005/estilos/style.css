@@ -19,36 +19,41 @@ header {
     font-family: 'Times New Roman', Times, serif;
 }
 
-menu {
+#itens {
     background-color: rgb(71, 71, 71);
     color: black;
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 8px;
+    display: none;
 }
 
-menu > hr {
-    width: 15px;
-    margin: auto;
-    display: block;
-}
 
-menu > a {
+#itens > a {
     background-color: rgb(207, 203, 194);
     color: black;
-    display: none; 
     margin-top: 3px;  
     padding: 3px; 
     text-decoration: none;
-}
-
-a:hover {
-    background-color: white;
-}
-
-menu:hover a {
     display: block;
+}
+
+#itens > a:hover {
+    background-color: rgba(152, 150, 150, 0.936);
+}
+
+
+
+#icone {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#icone:hover {
+    background-color: white;
+    color: black;
 }
 
 main {
@@ -56,8 +61,13 @@ main {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     width: 80vw;
+    margin: auto;
+    margin-top: 10px;
     padding: 10px;
     border-radius: 8px;
-    margin: auto;
     display: block;
+}
+
+p {
+    text-indent: 20px;
 }

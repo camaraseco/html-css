@@ -3,22 +3,30 @@
 /* Configurações para telas maiores */
 
 @media only screen and (min-width: 768px) {
-    menu {
-        background-color: rgb(141, 140, 140);
-        padding-bottom: 0px;
+
+
+    #itens {
+        display: block;
     }
 
-    menu > a {
-        display: inline-block; 
-    }
-
-    menu > hr {
-        display: none;
-    }
-
-    menu:hover a {
+   
+    #itens a {
         display: inline-block;
         border-top: 3px solid rgb(99, 98, 98); 
         
+    }
+
+    #itens > a:hover {
+        background-color: rgba(152, 150, 150, 0.936);
+    }
+
+    #icone {
+        display: none;
+    }
+
+    main {
+        width: 768px;
+        margin: auto;
+        margin-top: 10px;
     }
 }
