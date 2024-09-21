@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        .conteiner {
+            background-color: blue;
+            display: flex;
+            
+            
+            flex-flow: row nowrap;
+        }
+
+        .filho {
+            background-color: blueviolet;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            flex-basis: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="filho">a</div>
+        <div class="filho">conteúdo menor</div>
+        <div class="filho">conteúdo ainda maior</div>
+        <div class="filho">o maior conteúdo de todos eles</div>
+        <div class="filho">e</div>
+        <div class="filho">f</div>
+    </div>
+</body>
+</html>
